@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 RUN apt-get update -y
-RUN export debian_frontend=noninteractive && apt-get install -y nodejs npm
-RUN export debian_frontend=noninteractive && apt-get install -y postgres-client
-RUN export debian_frontend=noninteractive && apt-get install -y git
+RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y nodejs npm
+RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y postgres-client
+RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y git
